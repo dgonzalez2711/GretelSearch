@@ -6,7 +6,16 @@
                 <h1>2D Representation</h1>
                 <Chart v-if="chartLoaded" :chartData = "chartData" :options = "options" />
             </v-col> -->
-
+             <!--<div class="col-md-3" v-for="result in results">!-->
+            <div class="panel panel-default">
+                <!-- display the city name and country  -->
+                    {{ result._source.name }}, {{ result._source.country }}
+                </div>
+                <div class="panel-body">
+                <!-- display the latitude and longitude of the city  -->
+                    <p>lat:{{ result._source.lat }}, long: {{ result._source.lng }}.</p>
+                </div>
+                
             <v-col cols="12" md="6">
                 <h1>
                     Research Papers:
@@ -35,8 +44,9 @@
                         </v-col>
                     </v-row>
                 </div>
-
-
+                
+     
+            
                 <v-list v-else v-for="result in results" :key="result._id">
                     <PaperCard 
                         v-if="checkPeer(result._source.peer_reviewed)" 
@@ -49,10 +59,68 @@
                 </v-list>
             </v-col>
           </v-row>
+          
       </v-container>
   </v-main>
+  
 </template>
+<style>
+    .search-form .form-group {
+        float: right !important;
+        transition: all 0.35s, border-radius 0s;
+        width: 500px;
+        height: 32px;
+        background-color: #fff;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+        border-radius: 25px;
+        border: 1px solid #ccc;
+        
+    }
+  
+    .search-form .form-group input.form-control {
+        padding-right: 20px;
+        border: 0 none;
+        background: transparent;
+        box-shadow: none;
+        display: block;
+        
+    }
 
+    .search-form .form-group input.form-control::-webkit-input-placeholder {
+        display: none;
+    }
+
+    .search-form .form-group input.form-control:-moz-placeholder {
+        /* Firefox 18- */
+        display: none;
+    }
+
+    .search-form .form-group input.form-control::-moz-placeholder {
+        /* Firefox 19+ */
+        display: none;
+    }
+
+    .search-form .form-group input.form-control:-ms-input-placeholder {
+        display: none;
+    }
+
+    
+
+    .search-form .form-group span.form-control-feedback {
+        position: absolute;
+        top: -1px;
+        right: -2px;
+        z-index: 2;
+        display: block;
+        width: 34px;
+        height: 34px;
+        line-height: 34px;
+        text-align: center;
+        color: #3596e0;
+        left: initial;
+        font-size: 14px;
+    }
+</style>
 <script>
 import PaperCard from '../components/PaperCard'
 // import Chart from './Chart'
@@ -128,6 +196,37 @@ export default {
         console.log("Front Page Mounted")
     }
 }
+</script>
+<script>
+
+    // create a new Vue instance
+var app = new Vue({
+    el: '#app',
+    // declare the data for the component (An array that houses the results and a query that holds the current search string)
+    data: {
+        results: [],
+        query: ''
+    },
+    // declare methods in this Vue component. here only one method which performs the search is defined
+    methods: {
+        // make an axios request to the server with the current search query
+        search: function() {
+            axios.get("http://127.0.0.1:3001/search?q=" + this.query)
+                .then(response => {
+                    this.results = response.data;
+
+                })
+        }
+    },
+    // declare Vue watchers
+    watch: {
+        // watch for change in the query string and recall the search method
+        query: function() {
+            this.search();
+        }
+    }
+
+})
 </script>
 
 <style>

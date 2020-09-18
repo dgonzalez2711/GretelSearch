@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "gretelsearch",
+  "private_key_id": "f58abc5f1eab9807ecdc8f381a41b188bc6158e6",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC4+TBo+91Pwsih\ncOzAdun1AqWzpwvh8yMAHgAxR2W69hfdTkKxpp84t5F4+mKhuBg3GvH6Rw9z1OWg\n17JLCvfbwAIRMoSY7AcD0Is6QrnmmbOLfp02bx79uZF8aUk3XrWiFA+qTrGwhf8w\nQsZDyzHCy7vNpM4/Lbn/gRbJf3Yoo7uLe6tLBjTgHP5IUbYAmroRxZZq49ekqsOb\n0n3nVLBywGDsZrh1qog+JuH+cpiAtYOQ90fKpTnT0p8kU1DjD9TBYV7xIxFE7DTB\nFF3z2PB1rd/Hz+kvhExgzp8lDwZHDUZfOGPddb81Z/JJThp1J9XPtkRjU6St1fpT\nniX1aC8TAgMBAAECggEAUvn93Gp3qesQA1Pb8K6nXvCUEpYx/2cJYWkT3wdPPGJe\n7DjKNFUxgcjfKizwB+nEexvMRuCPrv9nDxMTeRRvgZWNl9dYohznPK/VdQovyKFU\naJQgxCVu+pS/DddRL9R9mDp1mIl6rlw90JFzzT+ej+rC0YpHtxG1KUfoR/W0tJ+R\nrq1ZIt/1u9N+dw6VGlP2XlpUyOeOYER6vU4aOwx4FW8EMUHYTiLar2p5lWfiQ74u\nA2d82oR7NgI3C+jgsZP3e4gymVXvrlRkktYOrQXN8B/90lOp4XJtdidbGs7xwEET\ngHyVieV2N1XYEOEOBczH4dc8sPcgOcBsuiYpLxO2sQKBgQD2KGKl6DScRVcmY91G\nXsdYEfKu0bcXSWNTmigiwpVhYS1LDdKRLGoa2X32Hw/91k8Mogsn4IisrAYoMS02\nkSlv/x+LbeMTSipmwi1UfYiwczlj9qiQ1y87z5WbgbCr+VPG3xQ+2fPwP3PKzLeG\n7rdJ95nwXL8qp55a01gvHC2/iQKBgQDAXojbTt5N3hlxteTX6JfgYZsqPKbU/tsf\nFApNaPmxgJJdrhxj9kzLPkiEfrCeugkaFfspJ0WlULZ8WPg1Iss5i+WyX/zNgEFf\n3c6z9bRAIdIwQ/qchqetHFTBRBrjgqbouG+s9s1qx47jUxg1t68P6xntz+Eae80s\nzBWOB+uWuwKBgQDOJ/6OYk4FftFBVqvQLrqXGNj97qd/ejgUoWvxyLNgzgkn7Zin\neuIWQIaM5XD4L08fDmt3Z0YwDxZM/PqX07U3lhxuIobl9dxTGVbrhwM+fBHZlY+R\nVpa5ad4rUc+MCBFQ4i3LgbAaSpoIg7FE8ZJSAWtMcfCsoZsvCAe31Mq/uQKBgQCC\nedwze7v2brUtViUgeIdCzpEyxa6We0HeQ3Z1aMUrKrybw7NH7c/KbrU7AL8E+cOg\nqNYQ5K0tYqBTmPjI+Y+DuaqTIN3T+LDeuBAyKW4XrZjl2cXKkt554ORvraTbOUvC\nPw6n70IGsdHtx/d8v9iCYIDWtw/EKcJRJx9blW2qbwKBgFeWfP5dMMuf5AMSZT8r\n+9Tfz1E0A8PyJ2MFxQh6PZdO6E6jQiKO/VJznu6vBIV89yp8BotJ0u6894ze/evQ\naNlIgNUcO2jGWc3ISzbrsDgeh0O6bTjRnnJpfEOJy/XmA0w/LBvDJLgk8MnT0pQr\nEPo9JXGmTz/n5QaVEyJEsCfI\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-z8t2p@gretelsearch.iam.gserviceaccount.com",
+  "client_id": "113106037178312199858",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-z8t2p%40gretelsearch.iam.gserviceaccount.com"
+}

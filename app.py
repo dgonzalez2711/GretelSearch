@@ -3,10 +3,14 @@ from elasticsearch import Elasticsearch
 from flask_cors import CORS
 import os
 import json
-
+import firebase_admin
+from firebase_admin import credentials
 app = Flask(__name__)
 CORS(app)
 
+
+cred = credentials.Certificate("key.json")
+firebase_admin.initialize_app(cred)
 es = Elasticsearch(
     cloud_id = os.environ.get('ELASTIC_CLOUD_ID'),
     http_auth = (os.environ.get('ELASTIC_USERNAME'), os.environ.get("ELASTIC_PASSWORD"))
